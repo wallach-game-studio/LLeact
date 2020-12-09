@@ -3,6 +3,7 @@ Copyright 2019@Jiri Korenek
 
 Basic LLeact component
 */
+console.log("Component Load");
 
 class Component {
 

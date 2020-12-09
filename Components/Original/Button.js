@@ -7,6 +7,15 @@ class Button extends Component {
         this.type = "submit";
     }
 
+    render()
+    {
+        let body = document.getElementById("main");
+        let btn = document.createElement("input");
+        btn.setAttribute("type","submit");
+        btn.setAttribute("value",this.text);
+        body.appendChild(btn);
+    }
+
     create(self) {
         let p = document.createElement(self.element);
         p.id = self.id;

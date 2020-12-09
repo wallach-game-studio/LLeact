@@ -1,12 +1,33 @@
 <div id="_"></div>
-<!--<script type="text/javascript" src="./Loader.js"></script>-->
-<script type="text/javascript" src="Components/Original/Component.js"></script>
-<script type="text/javascript" src="Components/Original/Button.js"></script>
-<script type="text/javascript">
+<body id="main">
+    <script>
+            var LoadedComps = false;
+    </script>
+    <!-- Loader Load -->
+    <script type="text/javascript" src="./Loader.js">
+    </script>
+    <!-- Class loading! -->
+    <script type="text/javascript">
+        console.log("Loding Classes Begin Here");
+        Loader.LoadClass("Components/Component.js");
+        Loader.LoadClass("Components/Original/Button.js");
+        Loader.LoadClass("Components/Original/TextField.js");
+        Loader.LoadClass("Components/Starter.js");
+    </script>
+    
+    
+    <script>
+            function Start()
+            {
+            // LLeact code here
 
-text = new Component();
-button = new Button();
+                console.log("LLeact code begin here!");
+                let txtf = new TextField("test text");
+                txtf.render();
 
-text.create(text);
-button.create(button);
-</script>
+                let btn = new Button("jmeno","text tlacitka");
+                btn.render();
+            }
+           
+    </script> 
+</body>

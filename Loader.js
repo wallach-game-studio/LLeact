@@ -1,3 +1,4 @@
+console.log("Loader Load Begin Here");
 class Loader{
     static LoadClass(path)
     {
