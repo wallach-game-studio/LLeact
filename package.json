@@ -1,0 +1,24 @@
+{
+  "name": "@jirklym/lleact",
+  "version": "0.0.1",
+  "description": "Like react but lightweight",
+  "main": "Loader.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wallach-game-studio/LLeact.git"
+  },
+  "keywords": [
+    "Frontend",
+    "Framework",
+    "Simple"
+  ],
+  "author": "Jiri Korenek",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wallach-game-studio/LLeact/issues"
+  },
+  "homepage": "https://github.com/wallach-game-studio/LLeact#readme"
+}
