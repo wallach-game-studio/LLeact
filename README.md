@@ -20,3 +20,10 @@ comp1_1.render();
 comp.render();
 )
 ˋˋˋ
+
+
+## Dev notes
+
+when instaciating component create html from render method,
+to html add component id tag.
+in render somehow change component innerText and parameters
