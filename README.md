@@ -22,7 +22,7 @@ comp.render();
 ˋˋˋ
 
 
-## Dev notes
+## .Dev notes
 
 when instaciating component create html from render method,
 to html add component id tag.
