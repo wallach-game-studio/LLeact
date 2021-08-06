@@ -19,10 +19,9 @@ function latestLoadedScript() {
 function scriptsLoadedCallBack() {
     console.log("scriptLoaded");
     const body = new Body();
-    bodyDom = document.querySelector("body");
-    bodyDom.innerHTML = bodyDom.innerHTML + body.render();
 }
 
 console.log("lleact binary loaded");
 importComponent("Components/Component.js");
+console.log("blocking");
 importComponent("dev/Body.js");
