@@ -7,26 +7,34 @@ Basic LLeact component
 class Component {
 
     constructor(id, parent) {
-        //paramaters creation
-        this.name = "Component";
-        this.element = "p";
-        this.type = undefined;
-        this.parent = parent
-        this.components = [];
-        if (id != undefined) this.id = this.hashCode(Date.now() + "a") + id;
-        else this.id = this.hashCode(Date.now() + "a");
+      //paramaters creation
+      this.name = "Component";
+      this.element = "p";
+      this.type = undefined;
+      if (id != undefined) this.id = this.hashCode(Date.now() + "a") + id;
+      else this.id = this.hashCode(Date.now() + "salt");
+      //i hopw this string concating was for salting puvodne zde bylo + "a"
+    
+    
+      //new code here
+      this.holder = document.createElement("div");
+      this.holder.setAttribute("id", this.id);
+      parent.appendChild(this.holder);
+    
+    }
+    
+    //main render function
+    render(self) {
+      //this method should return html of element
+    }
+    
+    redraw()
+    {
+      this.holder.innerHTML = this.render();
     }
 
     //main render function
     render() {
-        let output = "";
-
-        //output += this.app.render();
-        for (let i = 0; i < this.components.length; i++) {
-            const element = this.components[i];
-            output += element.render();
-        }
-        return output;
     }
 
     addComponent(component) {
