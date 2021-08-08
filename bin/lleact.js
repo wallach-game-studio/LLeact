@@ -3,6 +3,7 @@
 
 
 
+
 const importComponent = (path) => {
     let loadedComponent = document.createElement("script");
     loadedComponent.src = path;
@@ -22,6 +23,6 @@ function scriptsLoadedCallBack() {
 }
 
 console.log("lleact binary loaded");
-importComponent("Components/Component.js");
-console.log("blocking");
-importComponent("dev/Body.js");
+
+//importComponent("Components/Component.js");
+// importComponent("dev/Body.js");

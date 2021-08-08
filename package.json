@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/wallach-game-studio/LLeact/issues"
   },
-  "homepage": "https://github.com/wallach-game-studio/LLeact#readme"
+  "homepage": "https://github.com/wallach-game-studio/LLeact#readme",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
 }
