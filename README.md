@@ -27,3 +27,7 @@ comp.render();
 when instaciating component create html from render method,
 to html add component id tag.
 in render somehow change component innerText and parameters
+
+update 8/8/2021
+when component inner html is rewritten in in redraw and render func event listeners are removed. so event listeners need to be reasigned or some sort of Virtual DOM system is needed or 
+var string need to be extracted from render method;

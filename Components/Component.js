@@ -4,7 +4,8 @@ Edited 2021@Jiri Korenek
 
 Basic LLeact component
 */
-class Component {
+
+export class Component {
 
     constructor(id, parent) {
         //paramaters creation
@@ -12,6 +13,7 @@ class Component {
         this.element = "";
         this.type = undefined;
         this.parent = parent;
+        this.userVariables = {};
         if (id != undefined) this.id = this.hashCode(Date.now() + "a") + id;
         else this.id = this.hashCode(Date.now() + "salt");
         //i hopw this string concating was for salting puvodne zde bylo + "a"
@@ -29,7 +31,27 @@ class Component {
         }
 
 
+
+        const empty = {};
+
+
+
+        this.userVariables = new Proxy(this, this.handler);
+        //p.a = 10; // logs "Setting value a as 10"
+        //p.c = 20; // logs "Setting value c as 20"
+        //console.log(p.a); // logs 10
     }
+
+    handler = {
+        set(target, key, value) {
+            console.log(`Setting value ${key} as ${value}`);
+            console.log("compoennt variable changed");
+            target[key] = value;
+            this.redraw();
+        },
+    };
+
+
 
     //main render function
     render(self) {
@@ -48,13 +70,15 @@ class Component {
     }
 
 
-    create(self) {
-        let p = document.createElement(self.element);
-        p.id = self.id;
-        p.type = self.type;
-        p.innerText = "LLeact." + self.name;
-        document.getElementById("_").appendChild(p);
-    }
+
+
+    // create(self) {
+    //     let p = document.createElement(self.element);
+    //     p.id = self.id;
+    //     p.type = self.type;
+    //     p.innerText = "LLeact." + self.name;
+    //     document.getElementById("_").appendChild(p);
+    // }
 
     //thanks @deekshith from gitHub for this hash func!
     hashCode(str) {
@@ -62,4 +86,3 @@ class Component {
             (((prevHash << 5) - prevHash) + currVal.charCodeAt(0)) | 0, 0);
     }
 }
-console.log("");

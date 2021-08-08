@@ -1,6 +1,6 @@
 //this cannot be moved
 //loading base component
-
+import { Body } from "../dev/Body.js";
 
 
 
@@ -17,10 +17,7 @@ function latestLoadedScript() {
     return loadedScripts[loadedScripts.length - 1];
 }
 
-function scriptsLoadedCallBack() {
-    console.log("scriptLoaded");
-    const body = new Body();
-}
+const body = new Body();
 
 console.log("lleact binary loaded");
 

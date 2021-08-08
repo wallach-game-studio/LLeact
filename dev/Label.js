@@ -1,12 +1,9 @@
 import { Component } from "../Components/Component.js";
-import { Button } from "./Button.js";
 
-export class App extends Component {
+export class Label extends Component {
     constructor() {
         super(undefined);
-        this.var = "var data";
-        this.btn = new Button();
-        //this.redraw();
+        this.redraw();
     }
 
     render() {
