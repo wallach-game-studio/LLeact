@@ -1,0 +1,5 @@
+<p> LLeact is distributed over npm</p>
+<img alt="npm" src="https://img.shields.io/npm/v/@jirklym/lleact?color=blue">
+<img src="https://travis-ci.com/wallach-game-studio/LLeact.svg?branch=main">
+<a href="https://www.npmjs.com/package/@jirklym/lleact">https://www.npmjs.com/package/@jirklym/lleact</a>
+<p>npm i @jirklym/lleact</p>

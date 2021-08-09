@@ -1,0 +1,18 @@
+<p>RoadMap as Planned 9/8/2021</p>
+
+<p>Version 0.9 - Planned September 2021</p>
+<ul>
+    <li>npm package update</li>
+    <li>clean codebase</li>
+    <li>virtual dom system (complete rewrite pretty much every thing lol) ? or fix current bugs</li>
+</ul>
+
+<p>Version 1.0 - Planned December 2021 Release 🎉🎉🎉 yaay:)</p>
+<ul>
+    <li>component update when varialbe changes - reactivity</li>
+</ul>
+
+<p>Version 1.1 - Planned February 2022</p>
+<ul>
+    <li>new CSS workflow</li>
+</ul>

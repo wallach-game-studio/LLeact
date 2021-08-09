@@ -18,14 +18,12 @@ export class Component {
         else this.id = this.hashCode(Date.now() + "salt");
         //i hopw this string concating was for salting puvodne zde bylo + "a"
 
-
         //new code here
         this.holder = document.createElement("div");
         this.holder.setAttribute("id", this.id);
         if (this.parent == undefined) {
             this.parent = document.querySelector("body");
             this.parent.appendChild(this.holder);
-            console.trace();
         } else {
             this.parent.appendChild(this.holder);
         }
@@ -47,7 +45,6 @@ export class Component {
         //p.a = 10; // logs "Setting value a as 10"
         //p.c = 20; // logs "Setting value c as 20"
         //console.log(p.a); // logs 10
-
     }
 
 
@@ -64,6 +61,7 @@ export class Component {
     redraw() {
         this.holder.innerHTML = this.render();
     }
+
 
     //main render function
     render() {}
