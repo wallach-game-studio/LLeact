@@ -7,7 +7,8 @@ export class Content extends Component {
         this.name = "content";
         this.content = [
             `<p>a javascript UI framework similar to react, but more lightweigth</p>
-            <p> as 9/8/2021 its not production ready, but this website is written in LLeact</p> `,
+            <p> as 9/8/2021 its not production ready, but this website is written in LLeact</p> 
+            <p> LLeact framework wanna offer long term design desizions, not copying other framework functions and breaking old codebase all the time.</p>`,
             `<p> at this point documentation does not really make sence because LLeact still have ton of bugs</p>`,
             `<p> LLeact is distributed over npm</p>
             <img alt="npm" src="https://img.shields.io/npm/v/@jirklym/lleact?color=blue">
