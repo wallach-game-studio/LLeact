@@ -36,3 +36,7 @@ https://gomakethings.com/how-to-detect-changes-to-nested-arrays-and-objects-insi
 https://www.py4u.net/discuss/281310
 https://gist.github.com/jelkand/4231647570e22a5e0328d26eca7658a2
 https://codepen.io/farskid/pen/YZorLG
+
+article that cointains info ab roxy api
+
+https://codeburst.io/understanding-javascript-proxies-by-examining-on-change-library-f252eddf76c2
