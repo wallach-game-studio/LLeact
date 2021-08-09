@@ -27,6 +27,7 @@ in render somehow change component innerText and parameters
 
 update 8/8/2021
 when component inner html is rewritten in in redraw and render func event listeners are removed. so event listeners need to be reasigned or some sort of Virtual DOM system is needed or 
+
 var string need to be extracted from render method;
 also object proxyes are broken
 https://gomakethings.com/how-to-detect-changes-to-nested-arrays-and-objects-inside-a-proxy/
@@ -37,3 +38,7 @@ https://codepen.io/farskid/pen/YZorLG
 article that cointains info ab roxy api
 
 https://codeburst.io/understanding-javascript-proxies-by-examining-on-change-library-f252eddf76c2
+
+update 9/8/2021
+### virtual dom system is realy needed.
+### 
