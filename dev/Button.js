@@ -33,8 +33,7 @@ export class Button extends Component {
 
     increment(self) {
         self.userVariables.count++;
-        self.redraw();
-        console.trace();
+        //self.redraw();
         console.log(self.userVariables.count);
     }
 }

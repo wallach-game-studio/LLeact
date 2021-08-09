@@ -32,24 +32,27 @@ export class Component {
 
 
 
-        const empty = {};
+        this.empty = {};
 
+        this.handler = {
+            set(target, key, value) {
+                console.log(`Setting value ${key} as ${value}`);
+                console.log("component variable changed");
+                target[key] = value;
+                //this.redraw();
+            },
+        };
 
-
-        this.userVariables = new Proxy(this, this.handler);
+        this.userVariables = new Proxy(this.empty, this.handler);
         //p.a = 10; // logs "Setting value a as 10"
         //p.c = 20; // logs "Setting value c as 20"
         //console.log(p.a); // logs 10
+
     }
 
-    handler = {
-        set(target, key, value) {
-            console.log(`Setting value ${key} as ${value}`);
-            console.log("compoennt variable changed");
-            target[key] = value;
-            this.redraw();
-        },
-    };
+
+
+
 
 
 
