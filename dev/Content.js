@@ -35,6 +35,8 @@ export class Content extends Component {
             </ul>`
         ];
         this.selectedContent = 0;
+
+        Component.setStorageVal('content', this);
     }
 
     contentSwitch(index) {
@@ -48,13 +50,13 @@ export class Content extends Component {
     }
 
     afterRender() {
+        //-- i think this does not really work
         console.log(`${this.name} after render call`);
         //this.setup();
     }
 
     setup() {
-        console.log("wheet")
-
+        console.log("yeeet");
         document.getElementById("main").addEventListener("click",
             () => { this.contentSwitch(0); }
         )
@@ -67,7 +69,9 @@ export class Content extends Component {
         document.getElementById("roadmap").addEventListener("click",
             () => { this.contentSwitch(3); }
         )
-
+        let func = Component.getStorageVal("headerCallback");
+        Component.setStorageVal('btnFunc', this.contentSwitch);
+        func(Component.getStorageVal("Header"));
         return "";
     }
 }

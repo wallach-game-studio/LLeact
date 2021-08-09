@@ -31,7 +31,7 @@ article {
     align-items: center;
     flex-direction: column;
     font-family: 'IBM Plex Sans', sans-serif;
-    width: 30em;
+    width: 100%;
 }
 
 body {

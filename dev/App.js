@@ -7,11 +7,11 @@ export class App extends Component {
 
     constructor() {
         super(undefined);
-        this.header = new Header();
+        this.header = new Header(this);
         this.header.redraw();
-        this.content = new Content();
+        this.content = new Content(this);
         this.content.redraw();
-        this.footer = new Footer();
+        this.footer = new Footer(this);
         this.footer.redraw();
         this.redraw();
     }

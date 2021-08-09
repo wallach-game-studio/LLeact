@@ -7,7 +7,17 @@ Basic LLeact component
 
 export class Component {
 
-    constructor(id, parent) {
+    static contexStorage = [];
+
+    static setStorageVal(key, value) {
+        this.contexStorage[key] = value;
+    }
+
+    static getStorageVal(key) {
+        return this.contexStorage[key];
+    }
+
+    constructor(parent, id) {
         //paramaters creation
         this.name = "Component";
         this.element = "";

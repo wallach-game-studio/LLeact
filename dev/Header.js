@@ -2,7 +2,27 @@ import { Component } from "../Components/Component.js";
 export class Header extends Component {
     constructor() {
         super(undefined);
+        Component.setStorageVal("headerCallback", this.setupCallBack);
+        Component.setStorageVal('Header', this);
     }
+
+    //-- this callback meme should not exist but context is good tool
+
+
+
+    setupCallBack(self) {
+        console.log("callback");
+        self.btnFunc = Component.getStorageVal("btnFunc");
+        console.log(self.btnFunc);
+        self.btnFunc(2);
+        let content = Component.getStorageVal('content');
+        console.log(content);
+        //console.log(self.render())
+        //self.redraw();
+    }
+
+    //here will be the dynamic parse code needed
+    //Virtual DOM or VDOM :)
 
     render() {
         return `
