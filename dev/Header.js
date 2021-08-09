@@ -7,8 +7,8 @@ export class Header extends Component {
     render() {
         return `
 <header>
-    <h1>LLeact</h1>
-    <h2>like react but light weight</h2>
+    <h1>🚀 LLeact</h1>
+    <h2>like react but lightweight 🚅</h2>
     <nav>
         <ul>
             <li id="main">Main</li>
