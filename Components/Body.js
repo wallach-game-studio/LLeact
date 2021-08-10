@@ -4,12 +4,13 @@ import { App } from "../dev/App.js";
 export class Body extends Component {
     constructor() {
         super();
-        this.app = new App();
+        this.app = new App(this);
+        this.app.redraw();
     }
 
     redraw() {
         this.holder.innerHTML = this.render();
-        this.afterRender();
+        // this.afterRender();
     }
 
     afterRender() {
@@ -17,6 +18,6 @@ export class Body extends Component {
     }
 
     render() {
-        return this.app.render();
+        //return this.app.render();
     }
 }
